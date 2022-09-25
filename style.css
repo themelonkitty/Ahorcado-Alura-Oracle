@@ -1,0 +1,142 @@
+html{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #F3F5FC;
+    
+}
+
+.AluraLogo{
+    margin-left: 60px;
+    padding: 30px;
+
+}
+
+.cuadrotexto{
+    position:fixed;
+    top: 170px;
+    right: 450px;
+    left: 400px;
+    bottom: auto;
+    font-family: 'Inter', sans-serif;
+    border-radius: null;
+    background: transparent;
+    border: #D8DFE8;
+    font-size: 20px;
+    resize: none;
+    height: 100px;
+    outline: none;
+}
+
+.cuadrotexto:focus::placeholder{
+    color: transparent;
+}
+
+
+.botonesdeInicio{
+    padding: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iniciarJuego{
+    padding: 5px;
+    width: 300px;
+    height: 110px;
+    left: 560px;
+    top: 400px;
+    background: #0A3871;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    border-color: white;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+}
+
+.iniciarJuego:hover{
+    transform: scale(1.01);
+    background-color: #074086;
+}
+
+.nuevaPalabra{
+    width: 280px;
+    height: 60px;
+    left: 560px;
+    top: 550px;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px
+}
+
+.nuevaPalabra:hover{
+    transform: scale(1.03);
+}
+
+
+.botonesdeJuego,.botonesdeAgregarPalabra{
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 50px;
+    right: 30%;
+    padding: 10px;
+}
+
+.tableroDeJuego{
+    position:fixed;
+    top: auto;
+    right: auto;
+    left: 250px;
+    bottom: auto;
+}
+
+
+
+.nuevoJuego, .agregarPalabra{
+    width: 280px;
+    height: 60px;
+    left: 560px;
+    top: 550px;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    background-color:  #0A3871;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    margin-right: 7px;
+}
+.nuevoJuego:hover{
+    transform: scale(1.03);
+}
+
+.desistir, .cancelar{
+    width: 280px;
+    height: 60px;
+    left: 560px;
+    top: 550px;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    margin-left: 7px;
+}
+
+.desistir:hover{
+    transform: scale(1.03);
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    right: 0;
+    padding: 10px;
+}

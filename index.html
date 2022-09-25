@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Juego del Ahorcado</title>
+</head>
+<body>
+    <header id="header">
+        <img class ="AluraLogo" src="LogoAlura.png" alt="AluraLogo">
+    </header>
+    <section>
+    <div class="tableroDeJuego" id="tableroDeJuego">
+        <canvas  width="800" height="400" id="horca"></canvas>
+    </div>
+</section>
+<section>
+    <input class="cuadrotexto" id ="cuadrotexto" onkeydown="return /[a-z]/i.test(event.key)" maxlength="8" placeholder="Ingresa tu palabra (Max. 8 caracteres. Solo letras)"></textarea> 
+    <div class ="botonesdeAgregarPalabra">
+    <button class="agregarPalabra" id="agregarPalabra">Agregar palabra</button>
+    <button class="cancelar" id="cancelar">Cancelar</button>
+    </div>
+</section>
+    <section>
+        <div class="botonesdeInicio" id="botonesdeInicio">
+            <button class="iniciarJuego" id="botonIniciarJuego">Iniciar Juego</button>
+            <button class="nuevaPalabra" id="botonNuevaPalabra">Agregar nueva palabra</button>
+        </div>
+    </section>
+        <section>
+            <div class="botonesdeJuego">
+                <button class="nuevoJuego" id="nuevoJuego">Nuevo Juego</button>
+                <button class="desistir" id="desistir">Desistir</button>
+            </div>
+        </section>
+    <footer id="footer">
+        <p>Hecho por Mariana Rosiles 🐈</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="horca.js"></script>
+</body>
+</html>
+    
